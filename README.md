@@ -18,7 +18,7 @@ DB_PASSWORD=your_database_password
 
 ### Testing the application
 - Click on the Register link on the top right of the homepage to register
-- You will be presented with a once time visible access token (to be used for the `Bearer` parameter in postman)
+- You will be presented with a one time visible access token (to be used for the `Bearer` parameter in postman)
 - Copy the token to a safe place for future use.
 
 - Example API url 
@@ -26,7 +26,7 @@ DB_PASSWORD=your_database_password
 http://127.0.0.1:8000/api/v1/courses
 ```
 - You can use Postman (a REST Client)
-- Use the Access Token obtained from the registeration process to access the api
+- Use the Access Token obtained from the registeration process to access the API
 
 ### Headers for Postman
 ```
@@ -35,8 +35,8 @@ Accept: application/json
 ```
 ### Note
 - Run the command `./vendor/bin/phpunit` to test application
-- Install Sqlite module using the the commands below you get the error `[Illuminate\Database\QueryException: could not find driver]  when perfoming unit test`
+- Install Sqlite module using the commands below you get the error `[Illuminate\Database\QueryException: could not find driver]  when perfoming unit test`; Below is for Linux users (I'm a linux user), but use your OS equivalent.
 ```
-sudo apt-get install php7.0-sqlite
+sudo apt-get install php7.2-sqlite
 sudo service apache2 restart
 ```
