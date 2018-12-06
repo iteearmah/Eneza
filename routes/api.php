@@ -18,10 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request)
     return $request->user();
 });
 
-Route::group(['namespace' => 'API'], function ()
-{
-    Route::resource('test', 'CourseController');
-});
 Route::group(['middleware' => ['auth:api'], 'prefix' => 'v1', 'namespace' => 'API'], function ()
 {
     Route::resource('courses', 'CourseController');
