@@ -10,6 +10,7 @@ DB_DATABASE=your_database_name
 DB_USERNAME=your_database_name
 DB_PASSWORD=your_database_password
 ```
+- Run the command `touch database/database.sqlite` to create the sqlite for PHPunit testing
 - Run the command `composer install` to install project dependencies 
 - Run the command `php artisan migrate` to create project tables in the database
 - Run the command `php artisan passport:install` to make Oauth issue tokens
